@@ -1,9 +1,10 @@
-package com.satria.oop.Database
+package com.satria.oopcoba.Database
 
 import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
+import com.satria.oop.Database.LaptopDao
 import com.satria.opp.Database.Laptop
 
 @Database(entities = arrayOf(Laptop::class, User::class), version = 1)

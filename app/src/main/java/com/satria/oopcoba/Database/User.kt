@@ -1,4 +1,4 @@
-package com.satria.oop.Database
+package com.satria.oopcoba.Database
 
 import androidx.room.ColumnInfo
 import androidx.room.Entity

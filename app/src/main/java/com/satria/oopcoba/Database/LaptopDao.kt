@@ -16,4 +16,7 @@ interface LaptopDao {
 
     @Query("SELECT * FROM laptop")
     suspend fun getAllLaptop(): List<Laptop>
+
+    @Query("SELECT * FROM laptop WHERE id=:laptop_id")
+    suspend fun getLaptop(laptop_id: Int) : List<Laptop>
 }
