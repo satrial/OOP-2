@@ -26,6 +26,9 @@ class LaptopAdapter (private val AllLaptop: ArrayList<Laptop>, private val liste
         holder.view.icon_delete.setOnClickListener {
             listener.onDelete(laptop)
         }
+        holder.view.icon_edit.setOnClickListener {
+            listener.onUpdate(laptop)
+        }
 
     }
 
@@ -40,5 +43,6 @@ class LaptopAdapter (private val AllLaptop: ArrayList<Laptop>, private val liste
     interface OnAdapterListener {
         fun onClick(laptop: Laptop)
         fun onDelete(laptop: Laptop)
+        fun onUpdate(laptop: Laptop)
     }
 }

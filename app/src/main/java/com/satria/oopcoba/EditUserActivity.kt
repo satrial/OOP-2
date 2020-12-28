@@ -6,7 +6,6 @@ import android.view.View
 import com.satria.oopcoba.Database.AppRoomDB
 import com.satria.oopcoba.Database.Constant
 import com.satria.oopcoba.Database.User
-import kotlinx.android.synthetic.main.activity_edit_laptop.*
 import kotlinx.android.synthetic.main.activity_edit_user.*
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
@@ -60,7 +59,6 @@ class EditUserActivity : AppCompatActivity() {
                 btn_saveUser.visibility = View.GONE
                 getUser()
             }
-
         }
     }
 

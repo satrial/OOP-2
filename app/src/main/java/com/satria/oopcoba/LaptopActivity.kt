@@ -57,6 +57,10 @@ class LaptopActivity : AppCompatActivity() {
             override fun onDelete(laptop: Laptop) {
                 deleteDialog(laptop)
             }
+            override fun onUpdate(laptop: Laptop) {
+                // edit data
+                intentEdit(laptop.id, Constant.TYPE_UPDATE)
+            }
 
         })
         list_laptop.apply {

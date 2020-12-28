@@ -33,6 +33,15 @@ class EditLaptopActivity : AppCompatActivity() {
                 finish()
             }
         }
+            btn_updateLaptop.setOnClickListener{
+                CoroutineScope(Dispatchers.IO).launch {
+                    db.LaptopDao().updateLaptop(
+                        Laptop(laptopId, txt_merk.text.toString(), Integer.parseInt(txt_stok.text.toString()), Integer.parseInt(txt_harga.text.toString()) )
+                    )
+                    finish()
+                }
+            }
+
     }
 
     fun setupView() {
@@ -40,9 +49,14 @@ class EditLaptopActivity : AppCompatActivity() {
         val intentType = intent.getIntExtra("intent_type", 0)
         when (intentType) {
             Constant.TYPE_CREATE -> {
-
+                btn_updateLaptop.visibility = View.GONE
             }
             Constant.TYPE_READ -> {
+                btn_saveLaptop.visibility = View.GONE
+                btn_updateLaptop.visibility = View.GONE
+                getLaptop()
+            }
+            Constant.TYPE_UPDATE -> {
                 btn_saveLaptop.visibility = View.GONE
                 getLaptop()
             }
