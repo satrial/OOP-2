@@ -10,12 +10,11 @@
         android:id="@+id/btn_user"
         android:layout_width="250dp"
         android:layout_height="0dp"
-        android:layout_marginTop="259dp"
-        android:layout_marginBottom="36dp"
+        android:layout_marginTop="190dp"
+        android:layout_marginBottom="40dp"
         android:text="User"
         app:layout_constraintBottom_toTopOf="@+id/btn_laptop"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -23,12 +22,23 @@
         android:id="@+id/btn_laptop"
         android:layout_width="250dp"
         android:layout_height="0dp"
-        android:layout_marginBottom="316dp"
+        android:layout_marginBottom="40dp"
         android:text="Laptop"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/btn_pembeli"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.503"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_user" />
+
+    <Button
+        android:id="@+id/btn_pembeli"
+        android:layout_width="250dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="281dp"
+        android:text="Pembeli"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_laptop" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

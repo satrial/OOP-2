@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".EditUserActivity"></activity>
+        <activity android:name=".FormPembeliActivity"></activity>
+        <activity android:name=".PembeliActivity" />
+        <activity android:name=".EditUserActivity" />
         <activity android:name=".UserActivity" />
         <activity android:name=".EditLaptopActivity" />
         <activity android:name=".LaptopActivity" />
